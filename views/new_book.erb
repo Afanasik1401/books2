@@ -1,0 +1,21 @@
+<div class="large-12 cell">
+  <% form({ method: :post }, { obj: @params }) do |f| %>
+  <form method="post">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <%= f.input(:name, type: :text, placeholder: "Тест №10", label: "Название") %>
+        </div>
+        <div class="large-12 cell">
+          <%= f.input(:date, type: :text, placeholder: "2020-01-15", label: "Дата") %>
+        </div>
+        <div class="large-12 cell">
+          <%= f.input(:author, type: :text, placeholder: "Проверка знаний", label: "Автор") %>
+        </div>
+        <div class="large-12 cell">
+          <%= f.button(value: "Добавить", class: "button success") %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
